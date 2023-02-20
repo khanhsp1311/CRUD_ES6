@@ -1,0 +1,25 @@
+{
+  "name": "node-module",
+  "version": "1.0.0",
+  "description": "Khoi tao web server voi Node js",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "keywords": [
+    "Node",
+    "js"
+  ],
+  "author": "khanhsp",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}

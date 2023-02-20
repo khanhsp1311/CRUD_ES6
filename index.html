@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+       
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <div class="card-text">
+                <form>
+                  <div class="form-group">
+                    <label for="txtId">Student ID</label>
+                    <input type="number" class="form-control" id="txtId" placeholder="Enter ID">
+                  </div>
+                  
+                 
+                  <div class="form-group">
+                    <label for="txtName">Student Name</label>
+                    <input type="text" class="form-control" id="txtName" placeholder="Student Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="txtAge">Age</label>
+                    <input type="number" class="form-control" id="txtAge" placeholder="Age">
+                  </div>
+                  <div class="form-group">
+                    <label for="txtAge">Gender</label>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" checked id="rbGender1" name="rbGender" class="custom-control-input">
+                      <label class="custom-control-label" for="rbGender1" value="true">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="rbGender2" name="rbGender" class="custom-control-input">
+                      <label class="custom-control-label" for="rbGender2" value="false">Female</label>
+                    </div></div>
+                    <button type="button" class="btn btn-primary" onclick="add()">add</button>
+                    <button type="button" class="btn btn-secondary" onclick="update()">Update</button>
+                    <button type="button" class="btn btn-success" onclick="move()">Delete</button>
+                    <button type="button" class="btn btn-danger" onclick="sort()">Sort</button>
+                    <button type="button" class="btn btn-warning" onclick="search()">Search</button>
+                    
+
+
+                    <div class="form-group">
+                      <table class="table table-striped" id="studentList">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gender</th>
+                          </tr>
+                        </thead>
+                        <tbody id="studentList">
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                         
+                         
+                        </tbody>
+                      </table>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+    </body>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
+</html>

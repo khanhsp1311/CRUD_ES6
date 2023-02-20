@@ -1,0 +1,17 @@
+
+.container{
+  /* border: 1px solid black; */
+}
+.promotions{
+  /* border: 1px solid black; */
+  text-align: center;
+  margin-top: 33px;
+  width: 100%;
+}
+.footer{
+  width: 100%;
+  margin-top:33px;
+  height: 125px;
+ background-color: beige;
+ margin-left: 0px;
+}
